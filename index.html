@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mão Certa — encontre profissionais de confiança para todos os tipos de serviços.">
+  <title>Mão Certa | Marketplace de Serviços</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="Mão Certa - início">
+        <span class="brand-mark">🤝</span>
+        <span><strong>Mão</strong> <b>certa</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#categorias">Categorias</a>
+        <a href="#profissionais">Profissionais</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#seja-profissional">Seja profissional</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn btn-ghost" id="loginBtn">Entrar</button>
+        <a class="btn btn-primary small" href="#seja-profissional">Cadastrar serviço</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">PROFISSIONAIS DE CONFIANÇA NA PALMA DA SUA MÃO</span>
+          <h1>Encontre a <span>mão certa</span> para o seu serviço.</h1>
+          <p>Conectamos você a profissionais para elétrica, hidráulica, pintura, marcenaria, construção, limpeza e muito mais.</p>
+
+          <form class="search-box" id="searchForm">
+            <div class="search-field">
+              <span>⌕</span>
+              <div>
+                <label for="serviceSearch">Qual serviço você precisa?</label>
+                <input id="serviceSearch" type="text" placeholder="Ex.: eletricista, pintor..." autocomplete="off">
+              </div>
+            </div>
+            <div class="search-field location">
+              <span>⌖</span>
+              <div>
+                <label for="locationSearch">Onde?</label>
+                <input id="locationSearch" type="text" placeholder="Cidade ou região">
+              </div>
+            </div>
+            <button class="btn btn-primary search-btn" type="submit">Buscar profissionais</button>
+          </form>
+
+          <div class="trust-row">
+            <span>✓ Profissionais verificados</span>
+            <span>★ Avaliações de clientes</span>
+            <span>⚡ Atendimento ágil</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="floating-tag tag-top">★ 4,9 de avaliação</div>
+          <div class="phone">
+            <div class="phone-top"></div>
+            <div class="phone-screen">
+              <div class="mini-logo">🤝 <strong>Mão</strong> <b>certa</b></div>
+              <p class="phone-title">Encontre o profissional certo</p>
+              <div class="phone-search">⌕ Qual serviço você precisa?</div>
+              <div class="mini-grid">
+                <span>⚡<small>Elétrica</small></span>
+                <span>🔧<small>Hidráulica</small></span>
+                <span>🧱<small>Pedreiro</small></span>
+                <span>🎨<small>Pintor</small></span>
+                <span>🪚<small>Marceneiro</small></span>
+                <span>🧹<small>Limpeza</small></span>
+              </div>
+              <div class="phone-nav"><span>⌂<small>Início</small></span><span>⌕<small>Buscar</small></span><span>▣<small>Serviços</small></span><span>●<small>Perfil</small></span></div>
+            </div>
+          </div>
+          <div class="floating-tag tag-bottom">✓ Profissionais verificados</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section categories" id="categorias">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow dark">ENCONTRE PELO SERVIÇO</span>
+            <h2>O que você precisa?</h2>
+          </div>
+          <a href="#profissionais" class="text-link">Ver todos →</a>
+        </div>
+        <div class="category-grid">
+          <button class="category-card" data-service="Eletricista"><span class="cat-icon yellow">⚡</span><strong>Eletricista</strong><small>Instalações e manutenção</small></button>
+          <button class="category-card" data-service="Encanador"><span class="cat-icon blue">🚰</span><strong>Encanador</strong><small>Água e hidráulica</small></button>
+          <button class="category-card" data-service="Pedreiro"><span class="cat-icon purple">🧱</span><strong>Pedreiro</strong><small>Obras e reformas</small></button>
+          <button class="category-card" data-service="Pintor"><span class="cat-icon green">🎨</span><strong>Pintor</strong><small>Pintura residencial</small></button>
+          <button class="category-card" data-service="Marceneiro"><span class="cat-icon orange">🪚</span><strong>Marceneiro</strong><small>Móveis e madeira</small></button>
+          <button class="category-card" data-service="Ar-condicionado"><span class="cat-icon red">❄</span><strong>Ar-condicionado</strong><small>Instalação e limpeza</small></button>
+          <button class="category-card" data-service="Limpeza"><span class="cat-icon cyan">🧹</span><strong>Limpeza</strong><small>Casa e empresa</small></button>
+          <button class="category-card" data-service="Outros"><span class="cat-icon dark">•••</span><strong>Outros serviços</strong><small>Encontre mais opções</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section professionals" id="profissionais">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow dark">PROFISSIONAIS EM DESTAQUE</span>
+            <h2>Quem pode ajudar você</h2>
+          </div>
+          <div class="filters">
+            <button class="filter active" data-filter="Todos">Todos</button>
+            <button class="filter" data-filter="Eletricista">Elétrica</button>
+            <button class="filter" data-filter="Encanador">Hidráulica</button>
+            <button class="filter" data-filter="Pedreiro">Construção</button>
+          </div>
+        </div>
+
+        <div class="professional-grid" id="professionalGrid">
+          <article class="professional-card" data-category="Eletricista">
+            <div class="avatar avatar-yellow">JS</div>
+            <span class="verified">✓ Verificado</span>
+            <h3>João da Silva</h3>
+            <p class="profession">⚡ Eletricista</p>
+            <div class="rating">★ <strong>4,9</strong> <span>(127 avaliações)</span></div>
+            <p class="bio">Instalações elétricas, manutenção, iluminação e pequenos projetos.</p>
+            <div class="card-footer"><span>⌖ Gravataí - RS</span><button class="outline-btn profile-btn">Ver perfil</button></div>
+          </article>
+
+          <article class="professional-card" data-category="Encanador">
+            <div class="avatar avatar-blue">CA</div>
+            <span class="verified">✓ Verificado</span>
+            <h3>Carlos Alves</h3>
+            <p class="profession">🚰 Encanador</p>
+            <div class="rating">★ <strong>4,8</strong> <span>(93 avaliações)</span></div>
+            <p class="bio">Vazamentos, instalações hidráulicas, torneiras e manutenção.</p>
+            <div class="card-footer"><span>⌖ Canoas - RS</span><button class="outline-btn profile-btn">Ver perfil</button></div>
+          </article>
+
+          <article class="professional-card" data-category="Pedreiro">
+            <div class="avatar avatar-purple">MR</div>
+            <span class="verified">✓ Verificado</span>
+            <h3>Marcos Ribeiro</h3>
+            <p class="profession">🧱 Pedreiro</p>
+            <div class="rating">★ <strong>5,0</strong> <span>(76 avaliações)</span></div>
+            <p class="bio">Reformas, alvenaria, pisos, revestimentos e acabamento.</p>
+            <div class="card-footer"><span>⌖ Porto Alegre - RS</span><button class="outline-btn profile-btn">Ver perfil</button></div>
+          </article>
+
+          <article class="professional-card" data-category="Eletricista">
+            <div class="avatar avatar-green">PF</div>
+            <span class="verified">✓ Verificado</span>
+            <h3>Paulo Ferreira</h3>
+            <p class="profession">⚡ Eletricista</p>
+            <div class="rating">★ <strong>4,9</strong> <span>(58 avaliações)</span></div>
+            <p class="bio">Quadros elétricos, tomadas, iluminação e manutenção residencial.</p>
+            <div class="card-footer"><span>⌖ Novo Hamburgo - RS</span><button class="outline-btn profile-btn">Ver perfil</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how section" id="como-funciona">
+      <div class="container">
+        <div class="center-heading">
+          <span class="eyebrow dark">SIMPLES E PRÁTICO</span>
+          <h2>Como funciona?</h2>
+          <p>Do problema à solução em poucos passos.</p>
+        </div>
+        <div class="steps">
+          <div class="step"><div class="step-number">01</div><h3>Encontre</h3><p>Pesquise o serviço que você precisa e informe sua localização.</p></div>
+          <div class="step"><div class="step-number">02</div><h3>Compare</h3><p>Veja profissionais, avaliações, descrição dos serviços e região de atendimento.</p></div>
+          <div class="step"><div class="step-number">03</div><h3>Contrate</h3><p>Entre em contato, combine os detalhes e encontre a solução ideal.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pro-banner" id="seja-profissional">
+      <div class="container pro-banner-inner">
+        <div>
+          <span class="eyebrow">VOCÊ PRESTA SERVIÇOS?</span>
+          <h2>Coloque sua profissão no <span>Mão Certa.</span></h2>
+          <p>Crie seu perfil, divulgue seus serviços e fique mais perto de novos clientes.</p>
+        </div>
+        <button class="btn btn-dark" id="registerBtn">Cadastrar meu serviço →</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark">🤝</span><span><strong>Mão</strong> <b>certa</b></span></a>
+        <p>Profissionais de confiança na palma da sua mão.</p>
+      </div>
+      <div><h4>Marketplace</h4><a href="#categorias">Categorias</a><a href="#profissionais">Profissionais</a><a href="#como-funciona">Como funciona</a></div>
+      <div><h4>Profissionais</h4><a href="#seja-profissional">Cadastrar serviço</a><a href="#seja-profissional">Área do profissional</a></div>
+      <div><h4>Contato</h4><a href="mailto:contato@maocerta.com.br">contato@maocerta.com.br</a><span>Atendimento online</span></div>
+    </div>
+    <div class="container copyright">© 2026 Mão Certa. Todos os direitos reservados.</div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">×</button>
+      <span class="eyebrow dark">MÃO CERTA</span>
+      <h2 id="modalTitle">Entrar</h2>
+      <p id="modalText">Esta é uma demonstração visual do marketplace. O próximo passo pode ser conectar o formulário a um banco de dados.</p>
+      <form id="demoForm">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="Seu e-mail" required>
+        <button class="btn btn-primary" type="submit">Continuar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
